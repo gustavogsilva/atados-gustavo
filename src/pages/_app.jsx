@@ -15,6 +15,10 @@ const App = ({ Component, pageProps }) => {
     <React.Fragment>
       <Head>
         <title>Atados - Gustavo</title>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap"
+          rel="stylesheet"
+        ></link>
       </Head>
       <GlobalStateProvider initialState={initialState}>
         <Component {...pageProps} />

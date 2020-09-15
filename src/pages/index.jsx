@@ -5,10 +5,12 @@ import FormValues from '../components/FormValues';
 
 const Home = () => {
   return (
-    <div className="background px-3">
-      <Header />
-      <Form />
-      <FormValues />
+    <div className="background">
+      <div className="container px-3 lg:px-0">
+        <Header />
+        <Form />
+        <FormValues />
+      </div>
     </div>
   );
 };

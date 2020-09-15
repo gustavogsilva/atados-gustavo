@@ -3,6 +3,12 @@ header {
     width: 60px;
   }
 
+  h1 {
+    @media (min-width: 1024px) {
+      margin-top: 75px;
+    }
+  }
+
   h2 {
     color: #aafaff;
   }
