@@ -1,11 +1,11 @@
-import "../styles.css";
-import Head from "next/head";
+import '../../css/styles.css';
+import Head from 'next/head';
 
 const App = ({ Component, pageProps }) => {
   return (
     <React.Fragment>
       <Head>
-        <title>Teste de UI</title>
+        <title>Atados - Gustavo</title>
       </Head>
       <Component {...pageProps} />
     </React.Fragment>
