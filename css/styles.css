@@ -84,4 +84,12 @@ form .input-icon {
           transform: translateY(-50%);
   left: 12px;
 }
+
+.form-values {
+  border-radius: 10px;
+}
+
+.printed-obj {
+  font-family: Roboto;
+}
 /*# sourceMappingURL=styles.css.map */

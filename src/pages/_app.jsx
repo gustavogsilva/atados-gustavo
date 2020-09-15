@@ -1,5 +1,14 @@
 import '../../css/styles.css';
 import Head from 'next/head';
+import { GlobalStateProvider } from '../contexts/GlobalState';
+
+const initialState = {
+  data: '',
+  destino: '',
+  origem: '',
+  pessoas: '1',
+  tipoPassagem: ''
+};
 
 const App = ({ Component, pageProps }) => {
   return (
@@ -7,7 +16,9 @@ const App = ({ Component, pageProps }) => {
       <Head>
         <title>Atados - Gustavo</title>
       </Head>
-      <Component {...pageProps} />
+      <GlobalStateProvider initialState={initialState}>
+        <Component {...pageProps} />
+      </GlobalStateProvider>
     </React.Fragment>
   );
 };

@@ -4,9 +4,10 @@ import Logo from '../assets/svg/Icon/Logo.svg';
 import Menu from '../assets/svg/Icon/Menu.svg';
 
 const Header = () => {
+  console.log('Header');
   return (
     <header>
-      <nav className="flex items-center mx-3 h-24 border-b border-gray-400">
+      <nav className="flex items-center h-24 border-b border-gray-400">
         <Logo className="logo text-white" />
         <Menu className="ml-auto text-white w-10" />
       </nav>
