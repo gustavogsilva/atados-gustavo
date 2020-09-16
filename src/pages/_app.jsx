@@ -15,6 +15,7 @@ const App = ({ Component, pageProps }) => {
     <>
       <Head>
         <title>Atados Airline</title>
+        <meta name="Description" content="A melhor companhia de aviação do Brasil!" />
         <link
           href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap"
           rel="stylesheet"
