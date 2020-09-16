@@ -6,7 +6,6 @@ import Close from '../../assets/svg/Icon/Close3.svg';
 
 const MobileNav = () => {
   const [isCollapsed, setIsCollapsed] = useState(true);
-  console.log(isCollapsed);
 
   return (
     <>
@@ -22,10 +21,11 @@ const MobileNav = () => {
           </button>
         </div>
 
+        {/* Collapse Menu */}
         <ul
           className={`
             ${isCollapsed ? 'left-100 opacity-0' : 'left-0 opacity-1'}
-            w-screen flex flex-col bg-white text-gray-800 absolute z-10 transition-all duration-500 ease
+            w-screen flex flex-col bg-white text-gray-800 absolute z-10 transition-all duration-500 ease shadow-lg
           `}
           aria-hidden={isCollapsed ? 'true' : 'false'}
         >

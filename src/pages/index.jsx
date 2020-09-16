@@ -6,7 +6,7 @@ import FormValues from '../components/FormValues';
 const Home = () => {
   return (
     <div className="background">
-      <div className="container px-3 lg:px-0">
+      <div className="container px-3 lg:px-5">
         <Header />
         <Form />
         <FormValues />

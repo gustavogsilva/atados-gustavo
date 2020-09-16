@@ -10,7 +10,6 @@ import { useGlobalState } from '../contexts/GlobalState';
 
 const Form = () => {
   const [state, setState] = useGlobalState();
-  console.log(state);
 
   return (
     <Formik
@@ -20,7 +19,7 @@ const Form = () => {
       {({ handleChange, handleSubmit }) => (
         <form
           id="search-form"
-          className="text-lg my-6 lg:mt-12 lg:mb-20 bg-white overflow-hidden"
+          className="text-lg my-6 lg:mt-12 lg:mb-20 bg-white overflow-hidden shadow-xl"
           onSubmit={handleSubmit}
         >
           <div className="flex flex-col p-6">

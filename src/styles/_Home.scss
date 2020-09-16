@@ -1,3 +1,6 @@
 .background {
   background: linear-gradient(180deg, #a0aec0 0px, #718096 590px, #fff 590px);
+  @media (min-width: 1024px) {
+    background: linear-gradient(180deg, #a0aec0 0px, #718096 530px, #fff 530px);
+  }
 }
