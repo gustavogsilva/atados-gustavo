@@ -13,10 +13,29 @@ body {
   color: #2d3748;
 }
 
+button {
+  outline: none !important;
+}
+
 .container {
   min-height: 100vh;
   max-width: 1000px;
   margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.sr-only {
+  height: 1px;
+  left: -10000px;
+  overflow: hidden;
+  position: absolute;
+  top: auto;
+  width: 1px;
+}
+
+.left-100 {
+  left: 100%;
 }
 
 .background {
@@ -106,11 +125,14 @@ form .input-icon {
 .form-values {
   border-radius: 10px;
   max-width: 658px;
-  margin: 0 auto;
 }
 
 .printed-obj {
   font-family: 'Roboto Mono', monospace;
   line-height: 26px;
+}
+
+.teste {
+  font-size: 20px;
 }
 /*# sourceMappingURL=styles.css.map */

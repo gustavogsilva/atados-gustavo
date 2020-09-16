@@ -15,7 +15,7 @@ const Form = () => {
   return (
     <Formik
       initialValues={{ tipoPassagem: '', origem: '', destino: '', data: '', pessoas: 1 }}
-      onSubmit={formValues => setState(prevState => ({ ...prevState, ...formValues }))}
+      onSubmit={formValues => setState(state => ({ ...state, ...formValues }))}
     >
       {({ handleChange, handleSubmit }) => (
         <form

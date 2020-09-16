@@ -6,7 +6,7 @@ const initialState = {
   data: '',
   destino: '',
   origem: '',
-  pessoas: '1',
+  pessoas: '',
   tipoPassagem: ''
 };
 
@@ -14,7 +14,7 @@ const App = ({ Component, pageProps }) => {
   return (
     <React.Fragment>
       <Head>
-        <title>Atados - Gustavo</title>
+        <title>Atados Airline</title>
         <link
           href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap"
           rel="stylesheet"
