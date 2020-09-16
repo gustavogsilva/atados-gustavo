@@ -1,15 +1,15 @@
 import React from 'react';
 import { Formik } from 'formik';
 
-import Image from '../assets/svg/Icon/Image.svg';
-import Place from '../assets/svg/Icon/Place.svg';
-import Date from '../assets/svg/Icon/Date.svg';
-import Person from '../assets/svg/Icon/Person.svg';
-import Search from '../assets/svg/Icon/Search.svg';
+import IconImage from '../assets/svg/Icon/Image.svg';
+import IconPlace from '../assets/svg/Icon/Place.svg';
+import IconDate from '../assets/svg/Icon/Date.svg';
+import IconPerson from '../assets/svg/Icon/Person.svg';
+import IconSearch from '../assets/svg/Icon/Search.svg';
 import { useGlobalState } from '../contexts/GlobalState';
 
 const Form = () => {
-  const [state, setState] = useGlobalState();
+  const [, setState] = useGlobalState();
 
   return (
     <Formik
@@ -62,7 +62,7 @@ const Form = () => {
                   Origem
                 </label>
                 <div className="relative mt-2 mb-4">
-                  <Image className="input-icon" />
+                  <IconImage className="input-icon" />
                   <input
                     type="text"
                     id="origem"
@@ -78,7 +78,7 @@ const Form = () => {
                   Destino
                 </label>
                 <div className="relative mt-2 mb-4">
-                  <Place className="input-icon" />
+                  <IconPlace className="input-icon" />
                   <input
                     type="text"
                     id="destino"
@@ -94,7 +94,7 @@ const Form = () => {
                   Data de Ida / Retorno
                 </label>
                 <div className="relative mt-2 mb-4">
-                  <Date className="input-icon" />
+                  <IconDate className="input-icon" />
                   <input
                     type="text"
                     id="data"
@@ -110,7 +110,7 @@ const Form = () => {
                   Número de pessoas
                 </label>
                 <div className="relative mt-2">
-                  <Person className="input-icon" />
+                  <IconPerson className="input-icon" />
                   <select
                     name="pessoas"
                     id="pessoas"
@@ -134,7 +134,7 @@ const Form = () => {
               type="submit"
               className="bg-indigo-500 hover:bg-indigo-600 font-medium py-3 px-5 rounded inline-flex items-center text-white my-4 mr-6 ml-auto text-base"
             >
-              <Search className="w-5 mr-2" />
+              <IconSearch className="w-5 mr-2" />
               <span>Busque as viagens</span>
             </button>
           </div>

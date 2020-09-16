@@ -12,7 +12,7 @@ const initialState = {
 
 const App = ({ Component, pageProps }) => {
   return (
-    <React.Fragment>
+    <>
       <Head>
         <title>Atados Airline</title>
         <link
@@ -23,7 +23,7 @@ const App = ({ Component, pageProps }) => {
       <GlobalStateProvider initialState={initialState}>
         <Component {...pageProps} />
       </GlobalStateProvider>
-    </React.Fragment>
+    </>
   );
 };
 
